@@ -1,0 +1,27 @@
+<h1>Websockets example</h1>
+<br>
+<div class="row">
+  <div class="column">
+    <textarea name="contentOnput" cols="40" rows="5" [(ngModel)]="content"></textarea>
+    <br>
+    <button (click)="sendMessage()">Send Message</button>
+  </div>
+</div>
+
+<br>
+<section>
+  <h1>Sent Messages</h1>
+  <br>
+  <ul>
+    <li *ngFor="let item of sent">Source: {{item.source}} -> Content {{item.content}}</li>
+  </ul>
+</section>
+
+<section>
+  <h1>Received Messages</h1>
+  <br>
+  <ul>
+    <li *ngFor="let item of received">Source: {{item.source}} -> Content {{item.content}}</li>
+  </ul>
+</section>
+
