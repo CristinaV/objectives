@@ -2,7 +2,7 @@
 <br>
 <div class="row">
   <div class="column">
-    <textarea name="contentOnput" cols="40" rows="5" [(ngModel)]="content"></textarea>
+    <textarea name="contentOnput" cols="40" rows="5" [(ngModel)]="content"  (keyup.enter)="sendMessage()"></textarea>
     <br>
     <button (click)="sendMessage()">Send Message</button>
   </div>

@@ -7,8 +7,8 @@ const port = 5000;
 // events that come in.
 const wsServer = new ws.Server({ noServer: true });
 wsServer.on('connection', socket => {
+  /** on message subject next(after a message is sent from the client) send also a message from the server */
   socket.on('message', message => {
-
       wsServer.clients.forEach(function each(client) {
         if (client.readyState === ws.OPEN) {
           setTimeout(function () {
