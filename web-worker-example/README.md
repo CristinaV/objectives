@@ -25,3 +25,16 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## To add web-worker
+`ng generate web-worker app` command is needed to add web-worker to the application
+This command will add the following updates:
+`CREATE tsconfig.worker.json 
+CREATE src/app/app.worker.ts
+UPDATE tsconfig.app.json
+UPDATE angular.json
+UPDATE src/app/app.component.ts`
+
+## Documentation at:
+`https://www.tutorialspoint.com/angular8/angular8_web_workers.htm`
+
