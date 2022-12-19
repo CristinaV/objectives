@@ -1,0 +1,25 @@
+<h2>Products page!</h2>
+
+<div class="card-container">
+  <a class="card card-small" [routerLink]="'/'" tabindex="0">
+    <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+    <span>Home</span>
+  </a>
+
+  <a class="card card-small" [routerLink]="'/contacts'" tabindex="0">
+    <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+    <span>Contacts</span>
+  </a>
+
+  <a class="card card-small" [routerLink]="'/products'" tabindex="0">
+    <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+    <span>Products</span>
+  </a>
+</div>
+
+<div class="card-container">
+  <a class="card card-small" (click)="displayLog()" tabindex="0">
+    <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+    <span>Log data</span>
+  </a>
+</div>
